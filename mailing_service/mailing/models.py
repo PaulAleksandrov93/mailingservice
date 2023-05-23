@@ -11,7 +11,7 @@ class Client(models.Model):
 class Dispatch(models.Model):
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
-    message = models.TextField()
+    message_field = models.TextField()
     client_filter_operator_code = models.CharField(max_length=10)
     client_filter_tag = models.CharField(max_length=100)
 
